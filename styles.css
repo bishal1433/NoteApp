@@ -1,0 +1,16 @@
+.container{
+    margin-top:100px;
+}
+.col {
+    /* border:1px black solid; */
+    width: 100%;
+    max-width: 450px;
+    height: 450px;
+    position: relative;
+}
+img{
+    width: 100%;
+    max-width: 540px;
+    height: 450px;
+    position: relative;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Notes App</title>
+</head>
+
+<body>
+  
+  <!-- navbar with welcome message -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+    <a class="navbar-brand" href="#">My Notes</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input id="searchTxt" class="form-control mr-sm-2" type="search" placeholder="Search Title" aria-label="Search">
+      </form>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <!-- textarea element -->
+        <div class="card" style="width: 32rem;height:300px;">
+          <div class="card-body">
+            <h5 class="card-title" style="color:purple">Add Title Here</h5>
+            <div class="form-group">
+              <textarea class="form-control" id="addTitle" rows="1"></textarea>
+            </div>
+            <h5 class="card-title" style="color:purple">Add Notes Here</h5>
+            <div class="form-group">
+              <textarea class="form-control" id="addNote" rows="3"></textarea>
+            </div>
+            <button class="btn btn-success" onclick="addMe()">Add</button>
+          </div>
+          
+        </div>
+
+      </div> 
+
+      <div class="col">
+          <img src="https://cdn.mall.adeptmind.ai/https%3A%2F%2Fs7d5.scene7.com%2Fis%2Fimage%2FPaperSource%2F810514022364%3FresMode%3Dsharp2%26op_usm%3D2%2C1%2C25%2C1%26fmt%3Djpg%26qlt%3D85%26fit%3Dconstrain%2C1%26wid%3D600%26hei%3D600_large.jpg" alt="">
+      </div>
+    </div>
+    <div class="row">
+        <!-- populate with notes in this section -->
+        <div class="row container-fluid" id="notes"></div>
+    </div>
+  </div>
+
+  
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="main.js" charset="utf-8"></script>
+</body>
+
+</html>
